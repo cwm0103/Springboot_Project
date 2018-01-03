@@ -1,0 +1,70 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <title>图片旋转示例</title>
+    <script src="../../js/jquery-1.7.2.js" type="text/javascript"></script>
+</head>
+<body>
+<h4>示例：图片旋转</h4>
+
+角度：<input type="text" id="degree" /> <input id="btn" type="button" value="旋转"/>
+<div style="margin-top: 10px">
+    <!--<img th:src="@{/14/10/ff7c45acc2844269a28d03bc56843baa_2.jpg}" />-->
+    <img src="/uploadFiles/2.jpg" />
+</div>
+<label>旋转后的图片</label>
+<div style="margin-top: 20px;">
+    <img id="img" src="#"/>
+</div>
+<script type="text/javascript">
+    $(function () {
+        //按钮事件
+        $("#btn").click(function () {
+            debugger;
+            var degree=$("#degree").val();
+            var src=$("img").attr("src");
+            if(degree!=""||degree!=undefined)
+            {
+                //调用ajax
+                var data={'src':src,'degree':degree}
+                _ajax("/file/imgrotate","POST",data,false);
+            }else
+            {
+                alert("请输入角度！");
+
+            }
+        });
+
+        var _ajax=function (url,type,data,asy) {
+            $.ajax({
+                url: url,
+                type: type,
+                async: asy,
+                data: data,
+                success: function (json) {
+                    debugger;
+                    if (!json) {
+                        alert("内容无效");
+                    }else
+                    {
+                        if(json.ok!=undefined)
+                        {
+
+                            alert(json.ok);
+                            $("#img").attr("src",json.ok);
+                        }else
+                        {
+                            alert(json.no);
+                        }
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("请求出错");
+                }
+            });
+        }
+
+    })
+</script>
+</body>
+</html>

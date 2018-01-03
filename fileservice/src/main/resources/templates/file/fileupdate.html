@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文件修改</title>
+    <link href="../../lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../../lib/bootstrap-fileinput-master/css/fileinput.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="../../js/jquery.js" type="text/javascript"></script>
+    <script src="../../lib/bootstrap-fileinput-master/js/fileinput.js" type="text/javascript"></script>
+    <script src="../../lib/bootstrap-fileinput-master/js/locales/zh.js" type="text/javascript"></script>
+    <script src="../../lib/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+</head>
+<body>
+
+<form id="form1" name="form1"  enctype="multipart/form-data">
+    <label>文件上传</label>
+    <input id="file-zh" name="file-zh[]" type="file" multiple="multiple"/>
+</form>
+<script src="../../js/common/inputfile.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function () {
+    var previewJson=new Array();
+    var preConfigList = new Array();
+    var ids="3685,3686,3790,3791";
+    //获取原本的文件
+    files();
+    function files() {
+        $.ajax({
+            type: "POST",
+            cache:false,
+            async : false,
+            dataType : "json",
+            url:  "/file/getfiles",
+            data:{id:ids},
+            success: function(data){
+                showPhotos(data);
+            }
+        });
+    }
+    function showPhotos(djson) {
+        //后台返回json字符串转换为json对象
+        var reData = eval(djson);
+        // 预览图片json数据组
+        var preList = new Array();
+        //<![CDATA[
+        for ( var i = 0; i < reData.length; i++) {
+            var array_element = reData[i];
+            // 此处指针对.txt判断，其余自行添加
+            if(array_element.file_name.indexOf("txt")>0){
+                // 非图片类型的展示
+                preList[i]= "<div class='file-preview-other-frame'><div class='file-preview-other'><span class='file-icon-4x'><i class='fa fa-file-text-o text-info'></i></span></div></div>"
+            }else{
+                // 图片类型
+                preList[i]= "<img src=\"http://pic.58pic.com/58pic/13/74/51/99d58PIC6vm_1024.jpg\" title=\"2.jpg\" alt=\"2.jpg\" style=\"width:auto;height:160px;\" class=\"kv-preview-data file-preview-image\">";
+            }
+        }
+        //]]>
+        previewJson = preList;
+        // 与上面 预览图片json数据组 对应的config数据
+
+        //<![CDATA[
+        for ( var i = 0; i < reData.length; i++) {
+            var array_element = reData[i];
+            var tjson = {caption: array_element.file_name, // 展示的文件名
+                width: '120px',
+                url: '/file/deletePic', // 删除url
+                size:array_element.file_size,
+                key: array_element.file_id, // 删除是Ajax向后台传递的参数
+                extra: {id: array_element.file_id}
+            };
+            preConfigList[i] = tjson;
+        }
+        //]]>
+        // 具体参数自行查询
+    }
+    $("#file-zh").inputfile({
+        language:"zh",
+        uploadUrl:"/file/uploadFile",
+        allowedFileExtensions:['jpg', 'png','gif'],
+        maxFileSize:200,
+        allowedPreviewTypes:['image'],
+        initialPreview:previewJson,
+        initialPreviewConfig:preConfigList,
+        success:function (data) {
+            //上传获取到的数据
+            var array=data;
+        }
+    });
+})
+
+</script>
+</body>
+</html>

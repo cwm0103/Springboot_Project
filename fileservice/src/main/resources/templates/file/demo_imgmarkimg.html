@@ -1,0 +1,80 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <title>图片加图片水印示例</title>
+    <script src="../../js/jquery-1.7.2.js" type="text/javascript"></script>
+</head>
+<body>
+<h4>示例：图片加图片水印</h4>
+
+水印图片路径：<input type="text" id="targetsrc"/><br/>
+X轴偏移量：<input type="text" id="x"/><br/>
+Y轴偏移量：<input type="text" id="y"/><br/>
+透明度：<input type="text" id="alpha" />
+
+<input id="btn" type="button" value="生成"/>
+<div style="margin-top: 10px">
+    <!--<img th:src="@{/14/10/ff7c45acc2844269a28d03bc56843baa_2.jpg}" />-->
+    <img src="/uploadFiles/2.jpg" />
+
+</div>
+<label>图片水印后的图片</label>
+<div style="margin-top: 20px;">
+    <img id="img" src="#"/>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        //按钮事件
+        $("#btn").click(function () {
+            debugger;
+            var targetsrc=$("#targetsrc").val();
+            var x=$("#x").val();
+            var y=$("#y").val();
+            var alpha=$("#alpha").val();
+
+            var src=$("img").attr("src");
+            if(targetsrc!=""||targetsrc!=undefined)
+            {
+                //调用ajax
+                var data={'src':src,'targetsrc':targetsrc,'x':x,'y':y,'alpha':alpha};
+                _ajax("/file/imgmarkimg","POST",data,false);
+            }else
+            {
+                alert("请输入水印图片路径！");
+
+            }
+        });
+
+        var _ajax=function (url,type,data,asy) {
+            $.ajax({
+                url: url,
+                type: type,
+                async: asy,
+                data: data,
+                success: function (json) {
+                    debugger;
+                    if (!json) {
+                        alert("内容无效");
+                    }else
+                    {
+                        if(json.ok!=undefined)
+                        {
+                            alert(json.ok);
+                            $("#img").attr("src",json.ok);
+                        }else
+                        {
+                            alert(json.no);
+                        }
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("请求出错");
+                }
+            });
+        }
+
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <title>图片加水印字体示例</title>
+    <script src="../../js/jquery-1.7.2.js" type="text/javascript"></script>
+</head>
+<body>
+<h4>示例：图片加水印字体</h4>
+
+水印字体：<input type="text" id="font" /><br/>
+字体名称：<input type="text"  id="fontname"/><br/>
+字体粗细：<input type="text" id="fontBlok"/><br/>
+字体大小：<input type="text" id="fontSize"/><br/>
+X轴偏移量：<input type="text" id="x"/><br/>
+Y轴偏移量：<input type="text" id="y"/><br/>
+透明度：<input type="text" id="alpha" />
+
+<input id="btn" type="button" value="生成"/>
+
+<div style="margin-top: 10px">
+    <!--<img th:src="@{/14/10/ff7c45acc2844269a28d03bc56843baa_2.jpg}" />-->
+    <!--<img src="/uploadFiles/2.jpg" />-->
+    <img src="/img/2.jpg"/>
+</div>
+<label>添加文字水印后的图片</label>
+<div style="margin-top: 20px;">
+    <img id="img" src="#"/>
+</div>
+<script type="text/javascript">
+$(function () {
+    //按钮事件
+    $("#btn").click(function () {
+        var font=$("#font").val();
+        var fontname=$("#fontname").val();
+        var fontBlok=$("#fontBlok").val();
+        var fontSize=$("#fontSize").val();
+        var x=$("#x").val();
+        var y=$("#y").val();
+        var alpha=$("#alpha").val();
+
+        var src=$("img").attr("src");
+        if(font!=""||font!=undefined)
+        {
+            //调用ajax
+            var data={'src':src,'font':font,'fontname':fontname,'fontBlok':fontBlok,'fontSize':fontSize,'x':x,'y':y,'alpha':alpha};
+            _ajax("/file/imgmarkfont","POST",data,false);
+        }else
+        {
+            alert("请输入水印文字！");
+
+        }
+    });
+
+    var _ajax=function (url,type,data,asy) {
+        $.ajax({
+            url: url,
+            type: type,
+            async: asy,
+            data: data,
+            success: function (json) {
+                debugger;
+                if (!json) {
+                    alert("内容无效");
+                }else
+                {
+                   if(json.ok!=undefined)
+                   {
+                       alert(json.ok);
+                       $("#img").attr("src",json.ok);
+                   }else
+                   {
+                       alert(json.no);
+                   }
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+               alert("请求出错");
+            }
+        });
+    }
+
+})
+</script>
+</body>
+</html>

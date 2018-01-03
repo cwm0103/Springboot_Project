@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>文件下载示例</title>
+    <script src="../../js/jquery-1.7.2.js" type="text/javascript"></script>
+    <!--http://code.ciaoca.com/jquery/lazyload/demo/fadein-->
+    <script src="../../lib/jQuery.lazyload-1.7.2/jquery.lazyload.js" type="text/javascript"></script>
+    <script src="../../lib/jQuery.lazyload-1.7.2/jquery.scrollstop.js" type="text/javascript"></script>
+    <style>
+        #container {
+            height: 600px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+<h4>示例：文件下载</h4>
+<div style="margin-top: 10px">
+    <!--data-original="${map.value}"-->
+    <table id="container">
+        <tr th:each="map:${fileurlMap}">
+            <td th:text="${map.key}"></td>
+            <td><img class="lazy" style="width: 300px;height: 400px;" src="../../img/grey.gif"  th:attr="data-original=${map.value}" /><a href="#" th:href="@{/file/downLoad(filename=${map.key})}">下载</a></td>
+        </tr>
+    </table>
+</div>
+<script>
+    <!--基本示例-->
+    //    $('img').lazyload();
+    <!--淡入动画效果-->
+    //    $('img').lazyload({
+    //        effect:'fadeIn'
+    //    });
+    <!--大量图片加载-->
+    $('img.lazy').lazyload({
+        threshold: 200,//提前200px开始加载
+        event: 'scrollstop',
+        effect:'fadeIn'
+    });
+    <!--点击事件加载-->
+    //   $('img').lazyload(
+    //       {
+    //           event : "click"
+    //       }
+    //   );
+    <!--控制动画的速度-->
+    //    $("img.lazy").lazyload({
+    //        effect : "fadeIn",
+    //        effectspeed : 1000
+    //    });
+    <!--延时5000加载  延迟下载图片-->
+    //    $("img").lazyload({
+    //        event : "sporty"
+    //    });
+    //    $(window).bind("load", function() {
+    //        var timeout = setTimeout(function() {$("img").trigger("sporty")},5000);
+    //    });
+    <!--连隐藏的图片一起加载-->
+    //    $("img.lazy").lazyload({
+    //        skip_invisible : false
+    //    });
+    <!--容器中加载-->
+    //    $("img.lazy").lazyload({
+    //        effect : "fadeIn",
+    //        container: $("#container")
+    //    });
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <title>图片二分之一裁剪示例</title>
+    <script src="../../js/jquery-1.7.2.js" type="text/javascript"></script>
+</head>
+<body>
+<h4>示例：图片二分之一裁剪</h4>
+
+
+
+<input id="btn" type="button" value="生成"/>
+<div style="margin-top: 10px">
+    <img src="/uploadFiles/2.jpg" />
+</div>
+<label>裁剪后的图片</label>
+<div style="margin-top: 20px;">
+    <img id="img" src="#"/>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        //按钮事件
+        $("#btn").click(function () {
+            debugger;
+
+            var src=$("img").attr("src");
+
+                //调用ajax
+                var data={'src':src};
+                _ajax("/file/imgcutahalf","POST",data,false);
+
+        });
+
+        var _ajax=function (url,type,data,asy) {
+            $.ajax({
+                url: url,
+                type: type,
+                async: asy,
+                data: data,
+                success: function (json) {
+                    debugger;
+                    if (!json) {
+                        alert("内容无效");
+                    }else
+                    {
+                        if(json.ok!=undefined)
+                        {
+                            alert(json.ok);
+                            $("#img").attr("src",json.ok);
+                        }else
+                        {
+                            alert(json.no);
+                        }
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("请求出错");
+                }
+            });
+        }
+
+    })
+</script>
+</body>
+</html>

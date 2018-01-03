@@ -1,0 +1,78 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <title>图片裁剪(通用)示例</title>
+    <script src="/js/jquery-1.7.2.js" type="text/javascript"></script>
+</head>
+<body>
+<h4>示例：图片裁剪(通用)</h4>
+
+
+X轴偏移量：<input type="text" id="x"/><br/>
+Y轴偏移量：<input type="text" id="y"/><br/>
+裁剪宽度：<input type="text" id="w"/><br/>
+裁剪高度：<input type="text" id="h"/><br/>
+
+<input id="btn" type="button" value="生成"/>
+<div style="margin-top: 10px">
+    <img src="/fileservice/2.jpg" />
+</div>
+<label>裁剪后的图片</label>
+<div style="margin-top: 20px;">
+    <img id="img" src="#"/>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        //按钮事件
+        $("#btn").click(function () {
+            var x=$("#x").val();
+            var y=$("#y").val();
+            var w=$("#w").val();
+            var h=$("#h").val();
+
+            var src=$("img").attr("src");
+            if(x!=""||x!=undefined)
+            {
+                //调用ajax
+                var data={'src':src,'x':x,'y':y,'w':w,'h':h};
+                _ajax("/file/imgcut","POST",data,false);
+            }else
+            {
+                alert("请输入x轴偏移量！");
+
+            }
+        });
+
+        var _ajax=function (url,type,data,asy) {
+            $.ajax({
+                url: url,
+                type: type,
+                async: asy,
+                data: data,
+                success: function (json) {
+                    debugger;
+                    if (!json) {
+                        alert("内容无效");
+                    }else
+                    {
+                        if(json.ok!=undefined)
+                        {
+                            alert(json.ok);
+                            $("#img").attr("src",json.ok);
+                        }else
+                        {
+                            alert(json.no);
+                        }
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("请求出错");
+                }
+            });
+        }
+
+    })
+</script>
+</body>
+</html>

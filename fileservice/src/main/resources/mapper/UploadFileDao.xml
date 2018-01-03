@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.filemanage.dao.UploadFileDao">
+    <!--<select id="getOrigInfoList" resultType="com.enn.entity.OrigInfo">-->
+		<!--select o.id,userid,nickname,avatarurl,content,image,audio,status,ishot,reply,op.name as proName,o.time,o.score,o.level,o.sign,remarks,o.createtime-->
+		<!--from orig_info  o-->
+		<!--join user_info u on o.userid=u.id-->
+		<!--left join orig_product op on o.proid = op.id-->
+		<!--where (o.reply is not null or o.reply != '') and o.ishot = 1-->
+		<!--order by createtime DESC-->
+	<!--</select>-->
+    <!--<select id="getAllOrigInfoList" resultType="com.enn.entity.OrigInfo">-->
+        <!--select o.id,userid,nickname,avatarurl,content,o.image,audio,status,ishot,reply,remarks,o.createtime-->
+        <!--from orig_info  o-->
+        <!--join user_info u on o.userid=u.id-->
+        <!--where o.status=0-->
+        <!--order by createtime DESC-->
+    <!--</select>-->
+
+    <!--<select id="getHistoryOrigInfoList" resultType="com.enn.entity.OrigInfo">-->
+        <!--select o.id,userid,nickname,avatarurl,content,image,audio,status,ishot,reply,remarks,o.createtime,o.level,o.score,o.sign-->
+        <!--from orig_info  o-->
+        <!--join user_info u on o.userid=u.id-->
+         <!--where o.status > 0-->
+        <!--order by createtime DESC-->
+    <!--</select>-->
+
+
+    <!--<select id="getOrigInfoById" resultType="com.enn.entity.OrigInfo">-->
+        <!--select o.id,o.userid,u.nickname,u.avatarurl,o.content,o.image,o.audio,o.status,o.ishot,o.score,o.level,o.sign,o.reply,op.name as proName,o.remarks,o.createtime,o.proid-->
+        <!--from orig_info  o-->
+        <!--join user_info u on o.userid=u.id-->
+        <!--left join orig_product op on o.proid = op.id-->
+        <!--where o.id=#{origid}-->
+        <!--order by createtime DESC-->
+    <!--</select>-->
+
+    <!--<select id="getUserOrigInfoList" resultType="com.enn.entity.OrigInfo">-->
+        <!--select-->
+        <!--o.id,o.time,userid,nickname,avatarurl,content,image,audio,status,ishot,o.score,o.level,o.sign,reply,o.score,o.level,o.sign,remarks,o.createtime,p.`name`-->
+        <!--proName-->
+        <!--from orig_info o-->
+        <!--INNER JOIN user_info u on o.userid=u.id-->
+        <!--LEFT JOIN orig_product p ON o.proid=p.id-->
+        <!--<where>-->
+            <!--1=1-->
+            <!--<if test="userId != null and !&quot;&quot;.equals(userId.trim())">-->
+                <!--and u.id=#{userId}-->
+            <!--</if>-->
+            <!--<if test="status != null and !&quot;&quot;.equals(status.trim()) and &quot;0&quot;.equals(status.trim())">-->
+                <!--and o.status=0-->
+            <!--</if>-->
+            <!--<if test="status != null and !&quot;&quot;.equals(status.trim()) and &quot;1&quot;.equals(status.trim())">-->
+                <!--and o.status>0-->
+            <!--</if>-->
+        <!--</where>-->
+        <!--order by createtime DESC-->
+    <!--</select>-->
+
+    <!--<insert id="saveOrig">-->
+        <!--insert into orig_info-->
+        <!--<trim prefix="(" suffix=")" suffixOverrides=",">-->
+            <!--<if test="id!=null and  !&quot;&quot;.equals(id.trim())">-->
+                <!--id,-->
+            <!--</if>-->
+            <!--<if test="userid!=null and !&quot;&quot;.equals(userid.trim())">-->
+                <!--userid,-->
+            <!--</if>-->
+
+            <!--<if test="content!=null and  !&quot;&quot;.equals(content.trim())">-->
+                <!--content,-->
+            <!--</if>-->
+            <!--<if test="status!=null and  !&quot;&quot;.equals(status.trim())">-->
+                <!--status,-->
+            <!--</if>-->
+            <!--<if test="ishot!=null">-->
+                <!--ishot,-->
+            <!--</if>-->
+            <!--<if test="reply!=null and  !&quot;&quot;.equals(reply.trim())">-->
+                <!--reply,-->
+            <!--</if>-->
+
+            <!--<if test="image!=null and  !&quot;&quot;.equals(image.trim())">-->
+                <!--image,-->
+            <!--</if>-->
+            <!--<if test="audio!=null and  !&quot;&quot;.equals(audio.trim())">-->
+                <!--audio,-->
+            <!--</if>-->
+            <!--<if test="reply!=null and  !&quot;&quot;.equals(reply.trim())">-->
+                <!--reply,-->
+            <!--</if>-->
+            <!--<if test="proid!=null and  !&quot;&quot;.equals(proid.trim())">-->
+                <!--proid,-->
+            <!--</if>-->
+            <!--<if test="time!=null">-->
+                <!--time,-->
+            <!--</if>-->
+            <!--<if test="remarks!=null and  !&quot;&quot;.equals(remarks.trim())">-->
+                <!--remarks,-->
+            <!--</if>-->
+            <!--<if test="createtime!=null">-->
+                <!--createtime,-->
+            <!--</if>-->
+        <!--</trim>-->
+        <!--<trim prefix="values(" suffix=")" suffixOverrides=",">-->
+            <!--<if test="id!=null and  !&quot;&quot;.equals(id.trim())">-->
+                <!--#{id},-->
+            <!--</if>-->
+            <!--<if test="userid!=null and !&quot;&quot;.equals(userid.trim())">-->
+                <!--#{userid},-->
+            <!--</if>-->
+            <!--<if test="content!=null and  !&quot;&quot;.equals(content.trim())">-->
+                <!--#{content},-->
+            <!--</if>-->
+            <!--<if test="status!=null and  !&quot;&quot;.equals(status.trim())">-->
+                <!--#{status},-->
+            <!--</if>-->
+            <!--<if test="ishot!=null">-->
+                <!--#{ishot},-->
+            <!--</if>-->
+            <!--<if test="reply!=null and  !&quot;&quot;.equals(reply.trim())">-->
+                <!--#{reply},-->
+            <!--</if>-->
+            <!--<if test="image!=null and  !&quot;&quot;.equals(image.trim())">-->
+                <!--#{image},-->
+            <!--</if>-->
+            <!--<if test="audio!=null and  !&quot;&quot;.equals(audio.trim())">-->
+                <!--#{audio},-->
+            <!--</if>-->
+            <!--<if test="reply!=null and  !&quot;&quot;.equals(reply.trim())">-->
+                <!--#{reply},-->
+            <!--</if>-->
+            <!--<if test="proid!=null and  !&quot;&quot;.equals(proid.trim())">-->
+                <!--#{proid},-->
+            <!--</if>-->
+            <!--<if test="time!=null">-->
+                <!--#{time},-->
+            <!--</if>-->
+            <!--<if test="remarks!=null and  !&quot;&quot;.equals(remarks.trim())">-->
+                <!--#{remarks},-->
+            <!--</if>-->
+            <!--<if test="createtime!=null">-->
+                <!--#{createtime},-->
+            <!--</if>-->
+        <!--</trim>-->
+    <!--</insert>-->
+    <!--<select id="getKeyword" resultType="com.enn.entity.OrigKey">-->
+        <!--select k.id,k.value,k.product_id as productId,p.name from orig_key k join orig_product p on k.product_id = p.id-->
+    <!--</select>-->
+
+    <!--<select id="getProductList" resultType="com.enn.entity.OrigProduct">-->
+        <!--select id,pid,name,level from orig_product;-->
+    <!--</select>-->
+
+    <!--<select id="getProduct" resultType="com.enn.entity.Product">-->
+        <!--select id,product,createtime from product;-->
+    <!--</select>-->
+
+    <!--<delete id="deleteHotWord">-->
+        <!--delete FROM orig_key where id=#{id}-->
+    <!--</delete>-->
+
+    <!--<select id="getOrigKeyByid" resultType="com.enn.entity.OrigKey">-->
+        <!--select * from orig_key where id=#{id}-->
+    <!--</select>-->
+
+
+    <!--<insert id="hotwordadd">-->
+        <!--INSERT INTO orig_key(id,value,createtime) VALUES (#{id},#{value},#{createtime})-->
+    <!--</insert>-->
+    <!--<update id="updateOrigKey" parameterType="com.enn.entity.OrigKey">-->
+        <!--update orig_key set value=#{value} where id=#{id}-->
+    <!--</update>-->
+    <!--<update id="updateOrig" parameterType="com.enn.entity.OrigInfo">-->
+        <!--update orig_info set-->
+        <!--proid=#{proid},-->
+        <!--status=#{status},-->
+        <!--ishot=#{ishot},-->
+        <!--score=#{score},-->
+        <!--level=#{level},-->
+        <!--sign=#{sign},-->
+        <!--reply=#{reply}-->
+        <!--where id=#{id}-->
+    <!--</update>-->
+    <!--&lt;!&ndash;认证数据查询&ndash;&gt;-->
+    <!--<select id="Authentication" resultType="com.enn.entity.Employee">-->
+        <!--select * from Employee where name=${name} and code=${code}-->
+    <!--</select>-->
+    <!---->
+<insert id="adduploadfile" parameterType="com.filemanage.entity.FileUpload" useGeneratedKeys="true" keyProperty="file_id" >
+    INSERT  INTO file_upload(file_name,file_save_name,file_type,file_size,file_create_time,file_path,category) VALUES (
+    #{file_name},#{file_save_name},#{file_type},#{file_size},#{file_create_time},#{file_path},#{category})
+</insert>
+
+    <delete id="deleteuploadfile">
+        DELETE FROM file_upload WHERE file_id=#{fileid}
+    </delete>
+
+    <select id="getfiles" resultType="com.filemanage.entity.FileUpload">
+        select * from file_upload WHERE file_id in
+        <foreach item="item" index="index" collection="list" open="("
+                 separator="," close=")">
+            #{item}
+        </foreach>
+
+    </select>
+
+    <select id="getFileUpload" resultType="com.filemanage.entity.FileUpload">
+        SELECT * from file_upload WHERE file_id=#{fileid}
+    </select>
+
+    <select id="getList" resultType="com.filemanage.entity.FileUpload">
+        SELECT * FROM file_upload
+    </select>
+ </mapper>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta  charset="UTF-8"/>
+    <title>Jcrop自定义裁剪图片示例</title>
+    <link href="../../lib/Jcrop-0.9.12/css/jquery.Jcrop.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="../../lib/Jcrop-0.9.12/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../../lib/Jcrop-0.9.12/js/jquery.Jcrop.js" type="text/javascript"></script>
+</head>
+<body>
+<h4>示例：Jcrop自定义裁剪图片</h4>
+<form action="/file/imgcut_jcrop" method="post" onsubmit="return checkCoords();">
+    <input type="hidden" id="x" name="x" />
+    <input type="hidden" id="y" name="y" />
+    <input type="hidden" id="w" name="w" />
+    <input type="hidden" id="h" name="h" />
+    <input type="submit" value="Crop Image" class="btn btn-large btn-inverse" />
+</form>
+<div style="margin-top: 10px">
+    <img id="element_id" src="../../img/cutpicther.jpg" />
+</div>
+<script type="text/javascript">
+    $(function(){
+        $('#element_id').Jcrop({
+            aspectRatio: 1,
+            onSelect: updateCoords
+        });
+    });
+    function updateCoords(c)
+    {
+        $('#x').val(c.x);
+        $('#y').val(c.y);
+        $('#w').val(c.w);
+        $('#h').val(c.h);
+    };
+    function checkCoords()
+    {
+        if (parseInt($('#w').val())) return true;
+        alert('Please select a crop region then press submit.');
+        return false;
+    };
+</script>
+
+</body>
+</html>

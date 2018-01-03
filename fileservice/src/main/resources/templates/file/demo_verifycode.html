@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>生成验证示例</title>
+</head>
+<body>
+<h4>示例：验证示</h4>
+<div style="margin-top: 10px">
+    <img id="img" src="/file/verifyCode"/>
+    <a href='#' onclick="javascript:changeImg()" style="color:white;"><label style="color:darkslateblue;">看不清？</label></a>
+</div>
+<!-- 触发JS刷新-->
+<script type="text/javascript">
+    function changeImg(){
+        var img = document.getElementById("img");
+        img.src = "/file/verifyCode?date=" + new Date();
+    }
+</script>
+</body>
+</html>

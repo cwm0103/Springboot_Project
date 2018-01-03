@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>文件上传</title>
+    <link href="../../lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../../lib/bootstrap-fileinput-master/css/fileinput.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="../../js/jquery.js" type="text/javascript"></script>
+    <script src="../../lib/bootstrap-fileinput-master/js/fileinput.js" type="text/javascript"></script>
+    <script src="../../lib/bootstrap-fileinput-master/js/locales/zh.js" type="text/javascript"></script>
+    <script src="../../lib/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+
+<form id="form1" name="form1"  enctype="multipart/form-data">
+    <label>文件上传</label>
+    <input id="file-zh" name="file-zh[]" type="file" multiple="multiple"/>
+</form>
+<script src="../../js/common/inputfile.js" type="text/javascript"></script>
+<script>
+
+$(function () {
+
+    $("#file-zh").inputfile({
+        language:"zh",
+        uploadUrl:"/file/uploadFile",
+        allowedFileExtensions:['jpg', 'png','gif'],
+        maxFileSize:0,
+        allowedPreviewTypes:[],
+
+        success:function (data) {
+            //上传获取到的数据
+            var array=data;
+        }
+    });
+});
+
+
+
+</script>
+
+</body>
+</html>
