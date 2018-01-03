@@ -8,3 +8,5 @@ fileServer 是文件服务器，Java文件的上传，大文件的上传，图�
 javaServer 是一个提供接口的服务器，复制把数据传递给前端页面
 
 dataOperater 是一个操作execl的项目，包括工具类
+
+springbootDemo 是一个练习项目，包含自动生成mapper和实体dao等等，后续还会添加东西
