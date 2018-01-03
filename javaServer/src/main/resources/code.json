@@ -1,0 +1,41 @@
+{"001": {"1016":{
+		"electric":"pspace\\1001\\BL_1A41_1AL1_ZM_EpJ_PV_KJY_1001",
+		"steam":"",
+		"cold":"",
+		"hot":"",
+		"cost-electric":"",
+		"cost-gas":"",
+		"cost-water":""
+	},
+"1015":{
+		"electric":"pspace\\1001\\BL_1A41_2AL2_CZ_EpP_PV_KJY_1001",
+		"steam":"",
+		"cold":"",
+		"hot":"",
+		"cost-electric":"",
+		"cost-gas":"",
+		"cost-water":""
+	}
+},
+	"002":{"1016":{
+		"electric":"pspace\\1001\\BL_1A41_3AL1_ZM_EpG_PV_KJY_1001",
+		"steam":"",
+		"cold":"",
+		"hot":"",
+		"cost-electric":"",
+		"cost-gas":"",
+		"cost-water":""
+	},
+		"1015":{
+			"electric":"pspace\\1001\\BL_1A41_3AL1_ZM_Ub_PV_KJY_1001",
+			"steam":"",
+			"cold":"",
+			"hot":"",
+			"cost-electric":"",
+			"cost-gas":"",
+			"cost-water":""
+		}
+	}
+}
+
+
