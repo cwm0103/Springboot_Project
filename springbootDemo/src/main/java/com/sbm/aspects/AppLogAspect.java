@@ -1,8 +1,7 @@
 package com.sbm.aspects;
 
 import com.sbm.util.IPUtil;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.LogManager;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
@@ -16,6 +15,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 import java.util.Enumeration;
+import java.util.logging.Logger;
 
 /**
  * sbm
@@ -35,7 +35,7 @@ import java.util.Enumeration;
 @Order(-5)
 public class AppLogAspect {
 
-    private Logger logger = LogManager.getLogger(AppLogAspect.class);
+    private org.apache.log4j.Logger logger = LogManager.getLogger(AppLogAspect.class);
 
     // 保证每个线程都有一个单独的实例
     private ThreadLocal<Long> time = new ThreadLocal<>();

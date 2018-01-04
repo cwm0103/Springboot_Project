@@ -1,8 +1,7 @@
 package com.sbm.controller;
 
 import com.github.pagehelper.PageHelper;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.LogManager;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,6 +12,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 /**
  * sbm
@@ -25,7 +25,7 @@ import java.util.Map;
 @RequestMapping("/")
 public class HelloController {
 
-    private static final Logger LOGGER = LogManager.getLogger(HelloController.class);
+    private static final org.apache.log4j.Logger LOGGER = LogManager.getLogger(HelloController.class);
 
 
 
