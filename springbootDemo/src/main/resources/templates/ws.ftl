@@ -7,6 +7,8 @@
     <script src="../js/stomp.min.js"></script>
     <script src="../js/jquery.js"></script>
 
+
+
 </head>
 <body onload="disconnect()">
 <noscript><h2 style="color: #ff0000">貌似你的浏览器不支持websocket</h2></noscript>
