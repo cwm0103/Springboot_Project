@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sbm</groupId>
-    <artifactId>SpringBoot_Maven</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>SpringBootDemo</artifactId>
+    <version>1.0</version>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
