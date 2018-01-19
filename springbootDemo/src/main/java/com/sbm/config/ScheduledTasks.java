@@ -1,5 +1,6 @@
 package com.sbm.config;
 import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -7,6 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Component
+@EnableScheduling
 public class ScheduledTasks {
     private static final org.slf4j.Logger log= LoggerFactory.getLogger(ScheduledTasks.class);
 
@@ -16,6 +18,11 @@ public class ScheduledTasks {
     public void CurrentDateTime()
     {
         log.info("The time is now {}",format.format(new Date()));
+    }
+    //@Scheduled(cron = "")
+    public void testTask()
+    {
+
     }
 
 }
