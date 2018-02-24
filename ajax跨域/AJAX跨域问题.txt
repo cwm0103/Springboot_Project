@@ -1,0 +1,72 @@
+跨域问题：域名不一致  ，Http请求（request） Type 是（xhr）类型  
+
+	  主要还是浏览器限制，跟后台代码没有关系；  json格式就没有问题；能正常访问
+
+
+解决跨域问题： 1，取消浏浪器限制，  
+
+               cmd 命令如下  C:\Program Files (x86)\Google\Chrome\Application>chrome --disable-web-security  --user-data-dir=d:\temp3
+
+
+		2.jsonp 解决方法  需要改动后天代码
+
+		jsonp 是一个非官方约定
+
+
+		jsonp 的弊端 
+
+		服务器需要改动代码支持
+
+		只支持GET
+
+		发送的不是XHR请求
+
+		3。跨域解决方向：
+
+			被调用方解决
+				
+				服务器端实现
+
+				NGINX配置
+
+				APACHE配置
+
+				Filter代码实现
+
+			调用方解决
+
+
+【简单请求】：
+	方法为：GET  HEAD  POST
+	请求header里面  无自定义头   Content-Type为以下几种：text/plain  multipart/form-data  application/x-www-form-urlencoded
+
+【非简单请求】:
+	put,delete 方法的ajax请求  发送json格式的ajax请求  带自定义头的ajax请求
+
+
+【带Cookie的跨域】
+
+	Access-Control-Allow-Origin：*  使用所有的跨域问题嘛？
+
+	2点总结： 1  Access-Control-Allow-Origin  这个不能用* 号  启用 Access-Control-Allow-Credentials 为true
+
+		  2  必须用被调用者的cookie   
+【带自定义头的跨域】
+	//支持所有自定头
+        String header = req.getHeader("Access-Control-Request-Headers");
+        if(!org.springframework.util.StringUtils.isEmpty(header)){
+            res.addHeader("Access-Control-Allow-Headers",header);//option 预检命令
+        }
+
+
+【使用nginx解决跨域问题】
+配置问题
+
+【APACHE解决方案】
+配置问题
+
+【Spring框架解决方案】
+加注解@CrossOrigin
+
+【隐藏跨域-修改不了调用方】
+反向代理

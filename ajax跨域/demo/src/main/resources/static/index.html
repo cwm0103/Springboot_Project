@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="jasmine-standalone-2.8.0/lib/jasmine-2.8.0/jasmine.css">
+    <script src="jasmine-standalone-2.8.0/lib/jasmine-2.8.0/jasmine.js"></script>
+    <script src="jasmine-standalone-2.8.0/lib/jasmine-2.8.0/jasmine-html.js"></script>
+    <script src="jasmine-standalone-2.8.0/lib/jasmine-2.8.0/boot.js"></script>
+
+
+</head>
+<body>
+
+<!--<a href="#" onclick="get1()">发送get1请求</a>-->
+
+<!--<img src="http://localhost:8080/test/get1" >-->
+
+
+<script>
+    function get1() {
+        $.getJSON("http://localhost:8080/test/get1").then(
+            function (value) {
+                console.log(value);
+            }
+        );
+    }
+
+    //每一个测试用例的超时时间
+    jasmine.DEFAULT_TIMEOUT_INTERVAL=1000;
+    //请求的接口的前缀
+    var base="/ajaxserver";
+    //测试模块
+    describe("陈王明学习跨域知识",function () {
+        //测试方法1
+        it("get1请求",function (done) {
+            //服务器返回的结果
+            var result;
+            $.getJSON(base+"/get1").then(function (value) {
+                result=value;
+            })
+            //由于是异步请求，所有需要使用setTimeout来校验
+            setTimeout(function () {
+                expect(result).toEqual({
+                    "data":"get1 ok"
+                })
+                //校验完成，通知jasmine框架
+                done();
+            },100);
+
+        })
+
+
+        //测试方法2
+        // it("jsonp请求",function (done) {
+        //     //服务器返回的结果
+        //     var result;
+        //     $.ajax(
+        //         {
+        //             url:base+"/get1",
+        //             dataType:"jsonp",
+        //             jsonp:"callback2",
+        //             success:function (json) {
+        //                 result=json;
+        //             }
+        //         }
+        //     )
+        //     //由于是异步请求，所有需要使用setTimeout来校验
+        //     setTimeout(function () {
+        //         expect(result).toEqual({
+        //             "data":"get1 ok"
+        //         })
+        //         //校验完成，通知jasmine框架
+        //         done();
+        //     },100);
+        // })
+
+        it("postjson请求",function (done) {
+            //服务器返回的结果
+            var result;
+            $.ajax({
+                type:"post",
+                url:base+"/postjson",
+                contentType:"application/json;charset=utf-8",
+                data:JSON.stringify({name:"cwm"}),
+                success:function (json) {
+                    result=json;
+                }
+            })
+            //由于是异步请求，所有需要使用setTimeout来校验
+            setTimeout(function () {
+                expect(result).toEqual({
+                    "data":"postjson cwm"
+                })
+                //校验完成，通知jasmine框架
+                done();
+            },100);
+        });
+
+
+        it("getcookie请求",function (done) {
+            //服务器返回的结果
+            var result;
+            $.ajax({
+                type:"get",
+                url:base+"/getcookie",
+                xhrFields:{
+                    withCredentials:true
+                },
+                success:function (json) {
+                    result=json;
+                }
+            })
+            //由于是异步请求，所有需要使用setTimeout来校验
+            setTimeout(function () {
+                expect(result).toEqual({
+                    "data":"getcookie cwm"
+                })
+                //校验完成，通知jasmine框架
+                done();
+            },100);
+        });
+
+
+        it("getHeader请求",function (done) {
+            //服务器返回的结果
+            var result;
+            $.ajax({
+                type:"get",
+                url:base+"/getHeader",
+                headers:{
+                    "x-header1":"AAA"
+                },
+                beforeSend:function (xhr) {
+                    xhr.setRequestHeader("x-header2","BBB")
+                },
+                success:function (json) {
+                    result=json;
+                }
+            })
+            //由于是异步请求，所有需要使用setTimeout来校验
+            setTimeout(function () {
+                expect(result).toEqual({
+                    "data":"getHeader AAA BBB"
+                })
+                //校验完成，通知jasmine框架
+                done();
+            },100);
+        })
+
+
+    })
+    
+</script>
+</body>
+</html>
