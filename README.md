@@ -12,3 +12,5 @@ dataOperater 是一个操作execl的项目，包括工具类
 springbootDemo 是一个练习项目，包含自动生成mapper和实体dao等等，后续还会添加东西
 
 ajax跨域 是Java 跨域的demo，展示了Filter操作跨域，jsonp跨域，@CrossOrigin  Springboot框架跨域，nginx配置等等
+
+weixin_samll_project 是springboot后台+微信小程序的demo
