@@ -14,3 +14,5 @@ springbootDemo 是一个练习项目，包含自动生成mapper和实体dao等�
 ajax跨域 是Java 跨域的demo，展示了Filter操作跨域，jsonp跨域，@CrossOrigin  Springboot框架跨域，nginx配置等等
 
 weixin_samll_project 是springboot后台+微信小程序的demo
+
+guns 自动化后台管理系统
