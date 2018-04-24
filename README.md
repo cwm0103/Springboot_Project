@@ -16,3 +16,5 @@ ajax跨域 是Java 跨域的demo，展示了Filter操作跨域，jsonp跨域，@
 weixin_samll_project 是springboot后台+微信小程序的demo
 
 guns 自动化后台管理系统
+
+elastic_api 是Springboot 对elasticsearch 的JAVA API接口
