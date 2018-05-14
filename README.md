@@ -18,3 +18,7 @@ weixin_samll_project 是springboot后台+微信小程序的demo
 guns 自动化后台管理系统
 
 elastic_api 是Springboot 对elasticsearch 的JAVA API接口
+
+rabbitmq 一个简单的使用例子
+
+
