@@ -22,3 +22,5 @@ elastic_api 是Springboot 对elasticsearch 的JAVA API接口
 rabbitmq 一个简单的使用例子
 
 SpringBootDruidMultiDB 是阿里druid 多数据连接和数据监控的一个简单例子
+
+SpringBootRedis 是springboot +redis 的简单例子
