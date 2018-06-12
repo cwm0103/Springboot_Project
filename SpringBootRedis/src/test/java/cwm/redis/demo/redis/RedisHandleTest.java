@@ -43,11 +43,12 @@ public class RedisHandleTest {
 
     @Test
     public void getAllSet() {
-
+        Map<String, Set<Object>> allSet = redisHandle.getAllSet();
     }
 
     @Test
     public void getAllZSetRange() {
+
     }
 
     @Test
