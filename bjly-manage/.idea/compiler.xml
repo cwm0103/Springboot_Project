@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bjly-generator" />
+        <module name="bjly-mybatis" />
+        <module name="web-api" />
+        <module name="web-entity" />
+        <module name="web-mapper" />
+        <module name="web-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bjly-generator" target="1.8" />
+      <module name="bjly-manage" target="1.8" />
+      <module name="bjly-mybatis" target="1.8" />
+      <module name="bjly-web" target="1.8" />
+      <module name="web-api" target="1.8" />
+      <module name="web-entity" target="1.8" />
+      <module name="web-mapper" target="1.8" />
+      <module name="web-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bjly-generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bjly-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bjly-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bjly-web/web-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bjly-web/web-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bjly-web/web-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bjly-web/web-service" charset="UTF-8" />
+  </component>
+</project>

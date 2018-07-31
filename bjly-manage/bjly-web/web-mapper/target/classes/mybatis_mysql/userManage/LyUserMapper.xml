@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bjly.webmapper.userManage.LyUserMapper">
+  <resultMap id="BaseResultMap" type="com.bjly.webentity.userManage.LyUser">
+    <id column="u_id" jdbcType="INTEGER" property="uId" />
+    <result column="u_name" jdbcType="VARCHAR" property="uName" />
+    <result column="u_sex" jdbcType="CHAR" property="uSex" />
+    <result column="u_age" jdbcType="INTEGER" property="uAge" />
+    <result column="u_education" jdbcType="INTEGER" property="uEducation" />
+    <result column="u_tel" jdbcType="VARCHAR" property="uTel" />
+    <result column="u_photo" jdbcType="VARCHAR" property="uPhoto" />
+    <result column="u_code" jdbcType="VARCHAR" property="uCode" />
+    <result column="u_pwd" jdbcType="VARCHAR" property="uPwd" />
+  </resultMap>
+</mapper>

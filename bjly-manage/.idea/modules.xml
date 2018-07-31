@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bjly-generator/bjly-generator.iml" filepath="$PROJECT_DIR$/bjly-generator/bjly-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bjly-manage.iml" filepath="$PROJECT_DIR$/bjly-manage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bjly-mybatis/bjly-mybatis.iml" filepath="$PROJECT_DIR$/bjly-mybatis/bjly-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bjly-web/bjly-web.iml" filepath="$PROJECT_DIR$/bjly-web/bjly-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bjly-web/web-api/web-api.iml" filepath="$PROJECT_DIR$/bjly-web/web-api/web-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bjly-web/web-entity/web-entity.iml" filepath="$PROJECT_DIR$/bjly-web/web-entity/web-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bjly-web/web-mapper/web-mapper.iml" filepath="$PROJECT_DIR$/bjly-web/web-mapper/web-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bjly-web/web-service/web-service.iml" filepath="$PROJECT_DIR$/bjly-web/web-service/web-service.iml" />
+    </modules>
+  </component>
+</project>
