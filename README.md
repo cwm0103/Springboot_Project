@@ -24,3 +24,5 @@ rabbitmq 一个简单的使用例子
 SpringBootDruidMultiDB 是阿里druid 多数据连接和数据监控的一个简单例子
 
 SpringBootRedis 是springboot +redis 的简单例子
+
+bjly-manage 是一个后台开发的例子，继承了mybatis generator  druid 等等例子
