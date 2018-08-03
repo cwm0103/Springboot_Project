@@ -17,19 +17,19 @@ public class TestGenerator {
     @Before
     public void before() {
         // 读取mybatis参数
-        configFile = new File("D:\\bjly-manage\\bjly-generator\\src\\main\\resources\\config\\generatorConfig.xml");
+        configFile = new File("D:\\gitreposity\\bjly-manage\\bjly-generator\\src\\main\\resources\\config\\generatorConfig.xml");
     }
 
     @Test
     public void test() throws Exception {
 
-//        List<String> warnings = new ArrayList<String>();
-//        boolean overwrite = true;
-//        ConfigurationParser cp = new ConfigurationParser(warnings);
-//        Configuration config = cp.parseConfiguration(configFile);
-//        DefaultShellCallback callback = new DefaultShellCallback(overwrite);
-//        MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
-//        MyCommentGenerator d=new MyCommentGenerator();
-//        myBatisGenerator.generate(null);
+        List<String> warnings = new ArrayList<String>();
+        boolean overwrite = true;
+        ConfigurationParser cp = new ConfigurationParser(warnings);
+        Configuration config = cp.parseConfiguration(configFile);
+        DefaultShellCallback callback = new DefaultShellCallback(overwrite);
+        MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
+        MyCommentGenerator d=new MyCommentGenerator();
+        myBatisGenerator.generate(null);
     }
 }
