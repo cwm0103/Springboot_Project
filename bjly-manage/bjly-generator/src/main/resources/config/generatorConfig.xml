@@ -120,16 +120,16 @@
             <!--<generatedKey column="uId" sqlStatement="MySql" />-->
         <!--</table>-->
 
-        <table tableName="ly_test">
+        <table tableName="ly_role">
 
             <property name="useActualColumnNames" value="false" />
 
 
             <property name="modelName" value="web"/>
 
-            <property name="path" value="D:\bjly-manage" />
+            <property name="path" value="D:\gitreposity\bjly-manage" />
 
-            <property name="model" value="financeManage" />
+            <property name="model" value="userManage" />
 
             <property name="GenerationType" value="IDENTITY"/>
 
