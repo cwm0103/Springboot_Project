@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
 
+
 /**
  * 由MyBatis Generator工具自动生成
  */
@@ -65,5 +66,33 @@ public class LyUserService {
         List<LyUser> pages = lyUserMapper.selectByExample(example);
         PageInfo<LyUser> list=new PageInfo<>(pages);
         return list;
+    }
+
+    /**
+     * 登陆查询
+     * @param userName
+     * @param passWord
+     * @return
+     */
+    @DataSourceAnnotation
+    public LyUser selectLogin(String userName,String passWord,String dsId)
+    {
+        try
+        {
+            Example example=new Example(LyUser.class);
+            example.createCriteria().andEqualTo("uCode",userName);
+            example.createCriteria().andEqualTo("uPwd",passWord);
+            List<LyUser> lyUsers = lyUserMapper.selectByExample(example);
+            if(lyUsers.size()>0)
+            {
+                return lyUsers.get(0);
+            }
+            return null;
+        }
+        catch (Exception e)
+        {
+            return null;
+        }
+
     }
 }
