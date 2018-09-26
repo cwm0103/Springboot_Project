@@ -23,7 +23,16 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b05e4c44-9062-42d1-905b-1d5a5442c973" name="Default" comment="" />
+    <list default="true" id="b05e4c44-9062-42d1-905b-1d5a5442c973" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bjly-web/web-entity/src/main/java/com/bjly/webentity/userManage/LyRole.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bjly-web/web-mapper/src/main/java/com/bjly/webmapper/userManage/LyRoleMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bjly-web/web-mapper/src/main/resources/mybatis_mysql/userManage/LyRoleMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/bjly-web/web-service/src/main/java/com/bjly/webservice/userManage/LyRoleService.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/bjly-web/web-api/pom.xml" afterPath="$PROJECT_DIR$/bjly-web/web-api/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/bjly-web/web-api/target/classes/application.properties" afterPath="$PROJECT_DIR$/bjly-web/web-api/target/classes/application.properties" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/bjly-webapi/target/" />
@@ -45,133 +54,70 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="LyUserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bjly-web/web-service/src/main/java/com/bjly/webservice/userManage/LyUserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#617#618#0" expanded="true" />
-                <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#881#882#0" expanded="true" />
-                <element signature="e#939#940#0" expanded="true" />
-                <element signature="e#1020#1021#0" expanded="true" />
-                <element signature="e#1078#1079#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1450">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserApiController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserApiController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/apicontroller/UserApiController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+            <state relative-caret-position="1700">
+              <caret line="77" column="5" lean-forward="false" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CglibAopProxy.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-aop/4.3.13.RELEASE/spring-aop-4.3.13.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bjly-web/web-api/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11725">
-              <caret line="515" column="0" lean-forward="false" selection-start-line="515" selection-start-column="0" selection-end-line="515" selection-end-column="0" />
+            <state relative-caret-position="2325">
+              <caret line="93" column="65" lean-forward="false" selection-start-line="93" selection-start-column="65" selection-end-line="93" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapperPlugin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bjly-generator/src/main/java/com/bjly/bjlygenerator/MapperPlugin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
               <folding>
-                <marker date="1516245531627" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1516245531627" expanded="false" signature="157:1745" ph="..." />
-                <marker date="1516245531627" expanded="true" signature="2704:3129" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="3229:3877" ph="{...}" />
-                <marker date="1516245531627" expanded="false" signature="3907:3918" ph=" { " />
-                <marker date="1516245531627" expanded="false" signature="3958:3964" ph=" }" />
-                <marker date="1516245531627" expanded="true" signature="4018:6891" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="6983:7219" ph="{...}" />
-                <marker date="1516245531627" expanded="false" signature="7260:7271" ph=" { " />
-                <marker date="1516245531627" expanded="false" signature="7293:7299" ph=" }" />
-                <marker date="1516245531627" expanded="true" signature="7399:7852" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="7963:9526" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="9601:11990" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="12032:12180" ph="{...}" />
-                <marker date="1516245531627" expanded="false" signature="12207:12218" ph=" { " />
-                <marker date="1516245531627" expanded="false" signature="12305:12311" ph=" }" />
-                <marker date="1516245531627" expanded="true" signature="12395:12707" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="12812:13303" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="13410:14763" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="13544:13654" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="13723:14757" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="14836:22410" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="15128:15301" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="15344:18812" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="18858:20973" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="21041:21297" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="21361:21558" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="21590:22404" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="22494:23218" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="22787:23020" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="23082:23212" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="23314:25729" ph="{...}" />
-                <marker date="1516245531627" expanded="false" signature="23427:23442" ph=" { " />
-                <marker date="1516245531627" expanded="false" signature="23465:23475" ph=" }" />
-                <marker date="1516245531627" expanded="true" signature="23595:25126" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="25172:25358" ph="{...}" />
-                <marker date="1516245531627" expanded="false" signature="25389:25404" ph=" { " />
-                <marker date="1516245531627" expanded="false" signature="25435:25445" ph=" }" />
-                <marker date="1516245531627" expanded="true" signature="25501:25575" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="25646:25723" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="25833:26680" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="26077:26210" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="26330:26674" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="26770:27145" ph="{...}" />
-                <marker date="1516245531627" expanded="false" signature="26877:26892" ph=" { " />
-                <marker date="1516245531627" expanded="false" signature="26915:26925" ph=" }" />
-                <marker date="1516245531627" expanded="true" signature="27028:27139" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="27233:28132" ph="{...}" />
-                <marker date="1516245531627" expanded="false" signature="27338:27353" ph=" { " />
-                <marker date="1516245531627" expanded="false" signature="27376:27386" ph=" }" />
-                <marker date="1516245531627" expanded="true" signature="27489:28126" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="28213:28470" ph="{...}" />
-                <marker date="1516245531627" expanded="false" signature="28318:28333" ph=" { " />
-                <marker date="1516245531627" expanded="false" signature="28356:28366" ph=" }" />
-                <marker date="1516245531627" expanded="true" signature="28420:28464" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="28550:28762" ph="{...}" />
-                <marker date="1516245531627" expanded="false" signature="28630:28645" ph=" { " />
-                <marker date="1516245531627" expanded="false" signature="28666:28676" ph=" }" />
-                <marker date="1516245531627" expanded="false" signature="28712:28727" ph=" { " />
-                <marker date="1516245531627" expanded="false" signature="28746:28756" ph=" }" />
-                <marker date="1516245531627" expanded="true" signature="28867:29719" ph="{...}" />
-                <marker date="1516245531627" expanded="false" signature="28995:29010" ph=" { " />
-                <marker date="1516245531627" expanded="false" signature="29043:29053" ph=" }" />
-                <marker date="1516245531627" expanded="true" signature="29173:29713" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="29817:30510" ph="{...}" />
-                <marker date="1516245531627" expanded="false" signature="29938:29953" ph=" { " />
-                <marker date="1516245531627" expanded="false" signature="29986:29996" ph=" }" />
-                <marker date="1516245531627" expanded="true" signature="30116:30504" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="30614:31323" ph="{...}" />
-                <marker date="1516245531627" expanded="false" signature="30717:30732" ph=" { " />
-                <marker date="1516245531627" expanded="false" signature="30753:30763" ph=" }" />
-                <marker date="1516245531627" expanded="true" signature="30883:31317" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="31420:31854" ph="{...}" />
-                <marker date="1516245531627" expanded="false" signature="31516:31531" ph=" { " />
-                <marker date="1516245531627" expanded="false" signature="31552:31562" ph=" }" />
-                <marker date="1516245531627" expanded="true" signature="31682:31848" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="31927:31980" ph="{...}" />
-                <marker date="1516245531627" expanded="true" signature="31963:31974" ph="{}" />
+                <element signature="e#1723#1724#0" expanded="true" />
+                <element signature="e#1784#1785#0" expanded="true" />
+                <element signature="method#GeneratedPojo#0;class#MapperPlugin#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LyRoleMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bjly-web/web-mapper/src/main/java/com/bjly/webmapper/userManage/LyRoleMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -181,58 +127,49 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapperPlugin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bjly-generator/src/main/java/com/bjly/bjlygenerator/MapperPlugin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding>
-                <element signature="method#GeneratedPojo#0;class#MapperPlugin#0" expanded="false" />
+                <element signature="e#7301#7302#0" expanded="true" />
+                <element signature="e#7323#7324#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bjly-generator/pom.xml">
+      <file leaf-file-name="TestGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bjly-generator/src/test/java/TestGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
-              <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+            <state relative-caret-position="350">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bjly-mybatis/pom.xml">
+      <file leaf-file-name="LyUser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bjly-web/web-entity/src/main/java/com/bjly/webentity/userManage/LyUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="950">
+              <caret line="39" column="7" lean-forward="false" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bjly-web/pom.xml">
+      <file leaf-file-name="generatorConfig.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bjly-generator/src/main/resources/config/generatorConfig.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bjly-web/web-api/pom.xml">
+      <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bjly-generator/src/main/resources/config/generatorConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1300">
-              <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+            <state relative-caret-position="1775">
+              <caret line="71" column="27" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -283,6 +220,9 @@
       <replace />
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -309,34 +249,35 @@
         <option value="$PROJECT_DIR$/bjly-web/web-mapper/src/main/resources/mybatis_mysql/userManage/LyUserMapper.xml" />
         <option value="$PROJECT_DIR$/bjly-generator/src/main/java/com/bjly/bjlygenerator/MapperPlugin.java" />
         <option value="$PROJECT_DIR$/bjly-web/web-mapper/pom.xml" />
-        <option value="$PROJECT_DIR$/bjly-generator/src/main/resources/config/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/bjly-web/web-mapper/src/main/java/com/bjly/webmapper/Mapper.java" />
-        <option value="$PROJECT_DIR$/bjly-generator/src/test/java/TestGenerator.java" />
         <option value="$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/datasource/DynamicDataSourceContextHolder.java" />
         <option value="$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/datasource/DynamicDataSource.java" />
         <option value="$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/config/AppConstants.java" />
         <option value="$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/annotation/DataSourceAnnotation.java" />
         <option value="$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/aspect/DynamicDataSourceAspect.java" />
-        <option value="$PROJECT_DIR$/bjly-web/web-mapper/src/main/java/com/bjly/webmapper/userManage/LyUserMapper.java" />
         <option value="$PROJECT_DIR$/bjly-web/pom.xml" />
         <option value="$PROJECT_DIR$/bjly-web/web-api/src/test/java/com/bjly/webapi/WebApiApplicationTests.java" />
-        <option value="$PROJECT_DIR$/bjly-web/web-api/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/bjly-web/web-service/src/test/java/com/bjly/webservice/WebServiceApplicationTests.java" />
         <option value="$PROJECT_DIR$/bjly-web/web-service/src/main/java/com/bjly/webservice/userManage/impl/LyUserServiceImpl.java" />
         <option value="$PROJECT_DIR$/bjly-web/web-service/pom.xml" />
-        <option value="$PROJECT_DIR$/bjly-web/web-api/pom.xml" />
         <option value="$PROJECT_DIR$/bjly-web/web-mapper/src/main/java/com/bjly/webmapper/financeManage/LyTestMapper.java" />
         <option value="$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/config/SessionFactoryConfig.java" />
         <option value="$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/WebApiApplication.java" />
         <option value="$PROJECT_DIR$/bjly-web/web-service/src/main/java/com/bjly/webservice/financeManage/LyTestService.java" />
-        <option value="$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/apicontroller/UserApiController.java" />
         <option value="$PROJECT_DIR$/bjly-mybatis/src/main/java/com/bjly/bjlymybatis/annotation/DataSourceAnnotation.java" />
         <option value="$PROJECT_DIR$/bjly-mybatis/src/main/java/com/bjly/bjlymybatis/datasource/DynamicDataSource.java" />
         <option value="$PROJECT_DIR$/bjly-mybatis/src/main/java/com/bjly/bjlymybatis/datasource/DynamicDataSourceContextHolder.java" />
         <option value="$PROJECT_DIR$/bjly-mybatis/src/main/java/com/bjly/bjlymybatis/aspect/DynamicDataSourceAspect.java" />
         <option value="$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/config/DruidConfig.java" />
-        <option value="$PROJECT_DIR$/bjly-web/web-service/src/main/java/com/bjly/webservice/userManage/LyUserService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/bjly-web/web-api/pom.xml" />
+        <option value="$PROJECT_DIR$/bjly-web/web-api/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/utils/AjaxResult.java" />
+        <option value="$PROJECT_DIR$/bjly-generator/src/test/java/TestGenerator.java" />
+        <option value="$PROJECT_DIR$/bjly-generator/src/main/resources/config/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/bjly-web/web-mapper/src/main/java/com/bjly/webmapper/userManage/LyUserMapper.java" />
+        <option value="$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/apicontroller/UserApiController.java" />
+        <option value="$PROJECT_DIR$/bjly-web/web-service/src/main/java/com/bjly/webservice/userManage/LyUserService.java" />
       </list>
     </option>
   </component>
@@ -348,30 +289,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="bjly-generator" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="bjly-manage" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="bjly-manage" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="bjly-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="bjly-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -403,6 +321,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -425,12 +344,242 @@
               <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
               <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bjlygenerator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bjlymybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bjlymybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webentity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webentity" type="462c0819:PsiDirectoryNode" />
+              <item name="financeManage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-entity" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webentity" type="462c0819:PsiDirectoryNode" />
+              <item name="userManage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webmapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bjly-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bjly-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="bjly-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="webmapper" type="462c0819:PsiDirectoryNode" />
+              <item name="userManage" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
@@ -439,7 +588,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/xinaodongli/uesu/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -447,7 +596,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -543,52 +692,10 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
-    <configuration name="BjlyGeneratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bjly.bjlygenerator.BjlyGeneratorApplication" />
-      <module name="bjly-generator" />
-      <envs />
-    </configuration>
-    <configuration name="BjlyManageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bjly.bjlymanage.BjlyManageApplication" />
-      <module name="bjly-manage" />
-      <envs />
-    </configuration>
-    <configuration name="BjlyMybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bjly.bjlymybatis.BjlyMybatisApplication" />
-      <module name="bjly-mybatis" />
-      <envs />
-    </configuration>
-    <configuration name="BjlyWebapiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bjly.bjlywebapi.BjlyWebapiApplication" />
-      <module name="bjly-webapi" />
-      <envs />
-    </configuration>
     <configuration name="WebApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bjly.webapi.WebApiApplication" />
       <module name="web-api" />
-      <envs />
-    </configuration>
-    <configuration name="WebEntityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bjly.webentity.WebEntityApplication" />
-      <module name="web-entity" />
-      <envs />
-    </configuration>
-    <configuration name="WebMapperApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bjly.webmapper.WebMapperApplication" />
-      <module name="web-mapper" />
-      <envs />
-    </configuration>
-    <configuration name="WebServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bjly.webservice.WebServiceApplication" />
-      <module name="web-service" />
       <envs />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -624,16 +731,9 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.BjlyManageApplication" />
-      <item index="1" class="java.lang.String" itemvalue="Spring Boot.BjlyWebapiApplication" />
-      <item index="2" class="java.lang.String" itemvalue="Spring Boot.BjlyGeneratorApplication" />
-      <item index="3" class="java.lang.String" itemvalue="Spring Boot.BjlyMybatisApplication" />
-      <item index="4" class="java.lang.String" itemvalue="Spring Boot.WebEntityApplication" />
-      <item index="5" class="java.lang.String" itemvalue="Spring Boot.WebServiceApplication" />
-      <item index="6" class="java.lang.String" itemvalue="Spring Boot.WebMapperApplication" />
-      <item index="7" class="java.lang.String" itemvalue="Spring Boot.WebApiApplication" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.TestGenerator.test" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.WebApiApplication" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestGenerator.test" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -645,7 +745,7 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\37139\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -661,13 +761,67 @@
       <workItem from="1532655603408" duration="26921000" />
       <workItem from="1532758741423" duration="15181000" />
       <workItem from="1533017011193" duration="1219000" />
+      <workItem from="1533090250325" duration="17855000" />
+      <workItem from="1533265499090" duration="2093000" />
+      <workItem from="1533537311320" duration="37000" />
+      <workItem from="1533783693941" duration="13821000" />
+      <workItem from="1534488721995" duration="205000" />
+      <workItem from="1534901000661" duration="760000" />
+      <workItem from="1535013013035" duration="33000" />
     </task>
+    <task id="LOCAL-00001" summary="//添加的用户测试案例">
+      <created>1533091277805</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533091277805</updated>
+    </task>
+    <task id="LOCAL-00002" summary="cwm add 2018-8-2 添加消息返回类">
+      <created>1533199422608</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1533199422608</updated>
+    </task>
+    <task id="LOCAL-00003" summary="cwm add 2018-8-3 修改配置文件路径">
+      <created>1533267081482</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1533267081482</updated>
+    </task>
+    <task id="LOCAL-00004" summary="cwm add 2018-8-3 修改配置文件路径">
+      <created>1533267116140</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1533267116140</updated>
+    </task>
+    <task id="LOCAL-00005" summary="cwm add 2018-8-10 添加登陆方法">
+      <created>1533884050516</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1533884050516</updated>
+    </task>
+    <task id="LOCAL-00006" summary="cwm add 2018-8-10 添加登陆方法">
+      <created>1533884079305</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1533884079305</updated>
+    </task>
+    <task id="LOCAL-00007" summary="cwm add 2018-8-10 配置文件的修改">
+      <created>1533884101928</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1533884101928</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestGenerator_test - 2018.07.27 at 13h 43m 47s.xml">
-      <configuration name="TestGenerator.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestGenerator_test - 2018.07.27 at 13h 50m 27s.xml">
       <configuration name="TestGenerator.test" configurationId="JUnit" />
     </history-entry>
@@ -689,9 +843,18 @@
     <history-entry file="TestGenerator_test - 2018.07.27 at 15h 44m 08s.xml">
       <configuration name="TestGenerator.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestGenerator_test - 2018.08.03 at 11h 27m 58s.xml">
+      <configuration name="TestGenerator.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGenerator_test - 2018.08.03 at 11h 29m 42s.xml">
+      <configuration name="TestGenerator.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGenerator_test - 2018.08.09 at 11h 07m 47s.xml">
+      <configuration name="TestGenerator.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49851000" />
+    <option name="totallyTimeSpent" value="84655000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -704,6 +867,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -711,24 +875,25 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3973363" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1443133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26877683" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2725322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3973363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3973363" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -744,14 +909,17 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="//添加的用户测试案例" />
+    <MESSAGE value="cwm add 2018-8-2 添加消息返回类" />
+    <MESSAGE value="cwm add 2018-8-3 修改配置文件路径" />
+    <MESSAGE value="cwm add 2018-8-10 添加登陆方法" />
+    <MESSAGE value="cwm add 2018-8-10 配置文件的修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="cwm add 2018-8-10 配置文件的修改" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bjly-generator/src/main/java/com/bjly/bjlygenerator/MapperPlugin.java</url>
-          <line>109</line>
-          <properties />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/bjly-generator/src/main/java/com/bjly/bjlygenerator/MapperPlugin.java</url>
           <line>147</line>
@@ -801,12 +969,6 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/apicontroller/UserApiController.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/config/DruidConfig.java</url>
           <line>214</line>
           <properties />
@@ -830,126 +992,32 @@
           <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bjly-web/web-service/src/main/java/com/bjly/webservice/userManage/LyUserService.java</url>
+          <line>81</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/apicontroller/UserApiController.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="45" />
+      <option name="time" value="53" />
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/5.0.7.RELEASE/spring-context-5.0.7.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="693" column="0" lean-forward="false" selection-start-line="693" selection-start-column="0" selection-end-line="693" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/5.0.7.RELEASE/spring-context-5.0.7.RELEASE-sources.jar!/org/springframework/context/annotation/ConfigurationClassParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="829" column="0" lean-forward="false" selection-start-line="829" selection-start-column="0" selection-end-line="829" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.3.RELEASE/spring-boot-autoconfigure-2.0.3.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/AutoConfigurationImportSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2086">
-          <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot/1.5.10.RELEASE/spring-boot-1.5.10.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="274" column="9" lean-forward="false" selection-start-line="274" selection-start-column="9" selection-end-line="274" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.9.RELEASE/spring-boot-autoconfigure-1.5.9.RELEASE.jar!/org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="119" column="53" lean-forward="false" selection-start-line="119" selection-start-column="53" selection-end-line="119" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/4.3.13.RELEASE/spring-context-4.3.13.RELEASE.jar!/org/springframework/context/annotation/ConfigurationClassParser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-tx/4.3.13.RELEASE/spring-tx-4.3.13.RELEASE.jar!/org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/4.3.13.RELEASE/spring-beans-4.3.13.RELEASE.jar!/org/springframework/beans/BeanUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/4.3.13.RELEASE/spring-beans-4.3.13.RELEASE.jar!/org/springframework/beans/factory/support/SimpleInstantiationStrategy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/4.3.13.RELEASE/spring-context-4.3.13.RELEASE.jar!/org/springframework/context/support/ApplicationContextAwareProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/4.3.13.RELEASE/spring-beans-4.3.13.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="250" column="0" lean-forward="false" selection-start-line="250" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis-spring/1.3.1/mybatis-spring-1.3.1-sources.jar!/org/mybatis/spring/SqlSessionTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="93" column="87" lean-forward="false" selection-start-line="93" selection-start-column="65" selection-end-line="93" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-jdbc/5.0.7.RELEASE/spring-jdbc-5.0.7.RELEASE.jar!/org/springframework/jdbc/datasource/DataSourceTransactionManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bjly-web/web-service/src/test/java/com/bjly/webservice/WebServiceApplicationTests.java" />
-    <entry file="file://$PROJECT_DIR$/bjly-web/web-service/src/main/java/com/bjly/webservice/userManage/impl/LyUserServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/bjly-web/web-api/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-500">
-          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bjly-web/web-service/src/main/resources/application.properties" />
     <entry file="file://$PROJECT_DIR$/bjly-web/web-entity/src/main/java/com/bjly/webentity/financeManage/LyTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bjly-web/web-entity/src/main/java/com/bjly/webentity/userManage/LyUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,13 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bjly-web/web-service/src/main/java/com/bjly/webservice/financeManage/LyTestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/4.3.13.RELEASE/spring-webmvc-4.3.13.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1014,22 +1075,10 @@
     <entry file="file://$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/aspect/DynamicDataSourceAspect.java" />
     <entry file="file://$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/datasource/DynamicDataSource.java" />
     <entry file="file://$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/datasource/DynamicDataSourceContextHolder.java" />
-    <entry file="file://$PROJECT_DIR$/bjly-mybatis/src/main/java/com/bjly/bjlymybatis/annotation/DataSourceAnnotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bjly-mybatis/src/main/java/com/bjly/bjlymybatis/aspect/DynamicDataSourceAspect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="18" column="76" lean-forward="false" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#changeDataSource#0;class#DynamicDataSourceAspect#0" expanded="false" />
-            <element signature="method#destroyDataSource#0;class#DynamicDataSourceAspect#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1070,48 +1119,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+    <entry file="file://$PROJECT_DIR$/bjly-web/web-service/src/main/java/com/bjly/webservice/financeManage/LyTestService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bjly-mybatis/src/main/java/com/bjly/bjlymybatis/config/BaseMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bjly-web/web-mapper/src/main/java/com/bjly/webmapper/userManage/LyUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="69" lean-forward="false" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bjly-generator/src/main/java/com/bjly/bjlygenerator/MyCommentGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bjly-generator/src/main/java/com/bjly/bjlygenerator/MapperPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="method#GeneratedPojo#0;class#MapperPlugin#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="87">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bjly-generator/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
+        <state relative-caret-position="794">
           <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
           <folding />
         </state>
@@ -1121,7 +1138,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,17 +1151,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bjly-web/web-api/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+        <state relative-caret-position="444">
+          <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/4.3.13.RELEASE/spring-webmvc-4.3.13.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="53" column="9" lean-forward="false" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-web/web-entity/src/main/java/com/bjly/webentity/userManage/LyRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/bjly-web/web-mapper/src/main/resources/mybatis_mysql/userManage/LyRoleMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1450">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="200">
+          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-web/web-api/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-web/web-mapper/src/main/java/com/bjly/webmapper/userManage/LyUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/tk/mybatis/mapper/3.4.6/mapper-3.4.6-sources.jar!/tk/mybatis/mapper/common/example/SelectByExampleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-web/web-service/src/main/java/com/bjly/webservice/userManage/LyRoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-mybatis/src/main/java/com/bjly/bjlymybatis/annotation/DataSourceAnnotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/utils/AjaxResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="71" column="7" lean-forward="false" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/4.3.13.RELEASE/spring-core-4.3.13.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2225">
+          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-aop/4.3.13.RELEASE/spring-aop-4.3.13.RELEASE.jar!/org/springframework/aop/aspectj/AspectJAfterAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-aop/4.3.13.RELEASE/spring-aop-4.3.13.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-aop/4.3.13.RELEASE/spring-aop-4.3.13.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1153,111 +1252,128 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11725">
           <caret line="515" column="0" lean-forward="false" selection-start-line="515" selection-start-column="0" selection-end-line="515" selection-end-column="0" />
-          <folding>
-            <marker date="1516245531627" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1516245531627" expanded="false" signature="157:1745" ph="..." />
-            <marker date="1516245531627" expanded="true" signature="2704:3129" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="3229:3877" ph="{...}" />
-            <marker date="1516245531627" expanded="false" signature="3907:3918" ph=" { " />
-            <marker date="1516245531627" expanded="false" signature="3958:3964" ph=" }" />
-            <marker date="1516245531627" expanded="true" signature="4018:6891" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="6983:7219" ph="{...}" />
-            <marker date="1516245531627" expanded="false" signature="7260:7271" ph=" { " />
-            <marker date="1516245531627" expanded="false" signature="7293:7299" ph=" }" />
-            <marker date="1516245531627" expanded="true" signature="7399:7852" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="7963:9526" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="9601:11990" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="12032:12180" ph="{...}" />
-            <marker date="1516245531627" expanded="false" signature="12207:12218" ph=" { " />
-            <marker date="1516245531627" expanded="false" signature="12305:12311" ph=" }" />
-            <marker date="1516245531627" expanded="true" signature="12395:12707" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="12812:13303" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="13410:14763" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="13544:13654" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="13723:14757" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="14836:22410" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="15128:15301" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="15344:18812" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="18858:20973" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="21041:21297" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="21361:21558" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="21590:22404" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="22494:23218" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="22787:23020" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="23082:23212" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="23314:25729" ph="{...}" />
-            <marker date="1516245531627" expanded="false" signature="23427:23442" ph=" { " />
-            <marker date="1516245531627" expanded="false" signature="23465:23475" ph=" }" />
-            <marker date="1516245531627" expanded="true" signature="23595:25126" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="25172:25358" ph="{...}" />
-            <marker date="1516245531627" expanded="false" signature="25389:25404" ph=" { " />
-            <marker date="1516245531627" expanded="false" signature="25435:25445" ph=" }" />
-            <marker date="1516245531627" expanded="true" signature="25501:25575" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="25646:25723" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="25833:26680" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="26077:26210" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="26330:26674" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="26770:27145" ph="{...}" />
-            <marker date="1516245531627" expanded="false" signature="26877:26892" ph=" { " />
-            <marker date="1516245531627" expanded="false" signature="26915:26925" ph=" }" />
-            <marker date="1516245531627" expanded="true" signature="27028:27139" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="27233:28132" ph="{...}" />
-            <marker date="1516245531627" expanded="false" signature="27338:27353" ph=" { " />
-            <marker date="1516245531627" expanded="false" signature="27376:27386" ph=" }" />
-            <marker date="1516245531627" expanded="true" signature="27489:28126" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="28213:28470" ph="{...}" />
-            <marker date="1516245531627" expanded="false" signature="28318:28333" ph=" { " />
-            <marker date="1516245531627" expanded="false" signature="28356:28366" ph=" }" />
-            <marker date="1516245531627" expanded="true" signature="28420:28464" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="28550:28762" ph="{...}" />
-            <marker date="1516245531627" expanded="false" signature="28630:28645" ph=" { " />
-            <marker date="1516245531627" expanded="false" signature="28666:28676" ph=" }" />
-            <marker date="1516245531627" expanded="false" signature="28712:28727" ph=" { " />
-            <marker date="1516245531627" expanded="false" signature="28746:28756" ph=" }" />
-            <marker date="1516245531627" expanded="true" signature="28867:29719" ph="{...}" />
-            <marker date="1516245531627" expanded="false" signature="28995:29010" ph=" { " />
-            <marker date="1516245531627" expanded="false" signature="29043:29053" ph=" }" />
-            <marker date="1516245531627" expanded="true" signature="29173:29713" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="29817:30510" ph="{...}" />
-            <marker date="1516245531627" expanded="false" signature="29938:29953" ph=" { " />
-            <marker date="1516245531627" expanded="false" signature="29986:29996" ph=" }" />
-            <marker date="1516245531627" expanded="true" signature="30116:30504" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="30614:31323" ph="{...}" />
-            <marker date="1516245531627" expanded="false" signature="30717:30732" ph=" { " />
-            <marker date="1516245531627" expanded="false" signature="30753:30763" ph=" }" />
-            <marker date="1516245531627" expanded="true" signature="30883:31317" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="31420:31854" ph="{...}" />
-            <marker date="1516245531627" expanded="false" signature="31516:31531" ph=" { " />
-            <marker date="1516245531627" expanded="false" signature="31552:31562" ph=" }" />
-            <marker date="1516245531627" expanded="true" signature="31682:31848" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="31927:31980" ph="{...}" />
-            <marker date="1516245531627" expanded="true" signature="31963:31974" ph="{}" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2500">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-aop/4.3.13.RELEASE/spring-aop-4.3.13.RELEASE.jar!/org/springframework/aop/framework/adapter/MethodBeforeAdviceInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bjly-web/web-service/src/main/java/com/bjly/webservice/userManage/LyUserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="850">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#618#619#0" expanded="false" />
+            <element signature="e#668#669#0" expanded="false" />
+            <element signature="e#1021#1022#0" expanded="false" />
+            <element signature="e#1079#1080#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bjly-web/web-api/src/main/java/com/bjly/webapi/apicontroller/UserApiController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        <state relative-caret-position="1700">
+          <caret line="77" column="5" lean-forward="false" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-web/web-api/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2325">
+          <caret line="93" column="65" lean-forward="false" selection-start-line="93" selection-start-column="65" selection-end-line="93" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-generator/src/main/java/com/bjly/bjlygenerator/MyCommentGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="e#7301#7302#0" expanded="true" />
+            <element signature="e#7323#7324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-generator/src/test/java/TestGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-web/web-entity/src/main/java/com/bjly/webentity/userManage/LyUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="39" column="7" lean-forward="false" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-generator/src/main/resources/config/generatorConfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-generator/src/main/resources/config/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1775">
+          <caret line="71" column="27" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-mybatis/src/main/java/com/bjly/bjlymybatis/config/BaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-generator/src/main/java/com/bjly/bjlygenerator/MapperPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <element signature="e#1723#1724#0" expanded="true" />
+            <element signature="e#1784#1785#0" expanded="true" />
+            <element signature="method#GeneratedPojo#0;class#MapperPlugin#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjly-web/web-mapper/src/main/java/com/bjly/webmapper/userManage/LyRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="50" column="37" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1339,7 +1455,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

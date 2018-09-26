@@ -1,0 +1,5 @@
+com\bjly\bjlymybatis\aspect\DynamicDataSourceAspect.class
+com\bjly\bjlymybatis\annotation\DataSourceAnnotation.class
+com\bjly\bjlymybatis\config\BaseMapper.class
+com\bjly\bjlymybatis\datasource\DynamicDataSourceContextHolder.class
+com\bjly\bjlymybatis\datasource\DynamicDataSource.class
