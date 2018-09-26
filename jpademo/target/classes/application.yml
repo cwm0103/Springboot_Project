@@ -1,0 +1,30 @@
+
+server:
+  port: 8012
+spring:
+  application:
+    name: report-chart
+    jackson:
+      date-format: yyyy-MM-dd HH:mm:ss
+      time-zone: Asia/Chongqing
+    messages:
+      basename: i18n/Messages,i18n/Pages
+  jpa:
+    show-sql: true
+    properties:
+     hibernate:
+       temp:
+         use_jdbc_metadata_defaults: false
+
+  datasource:
+    username: hmauser
+    url: jdbc:postgresql://10.4.78.23:5432/uesu_huanghua1
+    password: hma!123
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.postgresql.Driver
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
